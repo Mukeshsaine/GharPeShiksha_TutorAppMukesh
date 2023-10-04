@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/parentsContacted"
+        android:title="Parents Contacted"
+        android:icon="@drawable/parents_contacted"
+        android:checkable="false"
+        tools:ignore="HardcodedText"/>
+   <!-- <item android:title="Teacher Update">
+        <menu>
+            <item
+                android:id="@+id/nav_TeacherDetails"
+                android:checkable="false"
+                android:icon="@drawable/details"
+                android:title="Teacher Details" />
+            <item
+                android:id="@+id/nav_Upgrade"
+                android:checkable="false"
+                android:icon="@drawable/upgrade"
+                android:title="Upgrade File" />
+        </menu>
+    </item>-->
+
+    <item android:title="Teaching Preference">
+        <menu>
+            <item
+                android:id="@+id/nav_changeSubjects"
+                android:checkable="false"
+                android:icon="@drawable/books"
+                android:title="Change Subjects" />
+            <item
+                android:id="@+id/nav_changeLocation"
+                android:checkable="false"
+                android:icon="@drawable/icon_my_location"
+                android:title="Change Location" />
+        </menu>
+    </item>
+
+    <item android:title="History">
+        <menu>
+
+            <item
+                android:id="@+id/nav_classesFeedback"
+                android:checkable="false"
+                android:icon="@drawable/ic_feedback"
+                android:title="Classes Feedback" />
+
+            <item
+                android:id="@+id/nav_billingHistory"
+                android:checkable="false"
+                android:icon="@drawable/billing_history"
+                android:title="Billing History" />
+        </menu>
+    </item>
+
+    <item android:title="Extra Earning">
+        <menu>
+
+            <item
+                android:id="@+id/nav_referEarn"
+                android:checkable="false"
+                android:icon="@drawable/earn_icon"
+                android:title="Refer and Earn" />
+
+            <item
+                android:id="@+id/nav_wallet"
+                android:checkable="false"
+                android:icon="@drawable/ic_wallet"
+                android:title="Wallet" />
+
+        </menu>
+    </item>
+
+    <item android:title="Useful Corner">
+        <menu>
+            <item
+                android:id="@+id/nav_testimonial"
+                android:checkable="false"
+                android:icon="@drawable/testimonial"
+                android:title="Testimonials" />
+
+            <item
+                android:id="@+id/nav_feedbackSuggestions"
+                android:checkable="false"
+                android:icon="@drawable/feedback_icon"
+                android:title="Feedback/Suggestion" />
+
+            <item
+                android:id="@+id/nav_usefulContent"
+                android:checkable="false"
+                android:icon="@drawable/useful_content"
+                android:title="Useful Content" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:checkable="false"
+                android:icon="@drawable/settings"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/nav_helpSupport"
+                android:checkable="false"
+                android:icon="@drawable/helpnsupport_icon"
+                android:title="Help and Support" />
+
+            <item
+                android:id="@+id/nav_uploadDocuments"
+                android:checkable="false"
+                android:icon="@drawable/upload_icon"
+                android:title="Upload Documents" />
+
+            <item
+                android:id="@+id/nav_contactUs"
+                android:checkable="false"
+                android:icon="@drawable/chatbot_icon"
+                android:title="Contact Us" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:checkable="false"
+                android:icon="@drawable/info_icon"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:checkable="false"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_version"
+        android:checkable="false"
+        android:enabled="false"
+        android:title="Version" />
+</menu>

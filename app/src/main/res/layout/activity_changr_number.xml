@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/changenuberrelativelayout"
+    android:layout_width="match_parent"
+    android:padding="50dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/courses_background"
+    tools:context=".ChangrNumberActivity">
+
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:id="@+id/textvieww"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Enter Your Number" />
+
+    <EditText
+        android:id="@+id/numbers"
+        android:hint="Enter Your Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textvieww"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enter"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#43C0F6"
+        android:layout_below="@+id/numbers"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:textColor="#fff"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+JAVA CODE
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()== android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
+    }
+    
+    
+    
+     <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar_responded_matching"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>

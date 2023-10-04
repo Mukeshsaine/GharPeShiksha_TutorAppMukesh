@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/applied_card"
+        style="@style/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:id="@+id/enquiryid"
+                android:text="Enquiry Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/end_id"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/enquiryid"
+                android:text="2398"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/enquiryid"
+                android:id="@+id/textAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_nprofile"
+                android:text="Name Surname"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAppDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"
+                android:text="2.5 Km"
+                android:textColor="@color/quantum_grey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relLay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAppName"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_book_black24dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textAppTutorReq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_toEndOf="@+id/text9"
+                    android:text="Tutor Requirement for biology in XII" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLay5"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/time_24dp"
+                    android:drawableTint="#0F83FB"
+                    android:text="Posted on: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textAppPosted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/post"
+                    android:drawablePadding="5dp"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/relLay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLay"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/post2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_eye_blue_24dp"
+                android:text="Viewed on: "
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textAppViewed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/post2"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/relLay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLay2"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/post3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/money"
+                    android:text="Budget: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textAppBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/post3"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_below="@+id/relLay3"
+                android:id="@+id/FeedbackDivider"
+                android:background="#D5D5D5"/>
+
+            <RelativeLayout
+                android:id="@+id/feedRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FeedbackDivider"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_message_blue_24dp"
+                    android:text="My feedback: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"/>
+
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/text7"
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gpsRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedRel"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_message_blue_24dp"
+                    android:text="GharPeShiksha message: "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"/>
+
+
+                <TextView
+                    android:id="@+id/our_msg"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/text10"
+                    android:text=" "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                style="@style/Divider"
+                android:layout_below="@+id/gpsRel"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/relLay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textAppLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_location_on_black_24dp"
+                    android:gravity="center"
+                    android:text="Janakpuri, Delhi"
+                    android:textColor="#0F83FB"
+                    android:textStyle="bold" />
+
+              <!--  <TextView
+                    android:id="@+id/textFeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/blue_border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Give Feedback"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />-->
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

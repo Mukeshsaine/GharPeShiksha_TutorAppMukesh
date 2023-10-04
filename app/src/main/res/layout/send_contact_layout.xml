@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Recivedlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="#CCEAF8"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <TextView
+            android:id="@+id/timedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="4dp"
+            android:text="--------"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recivedlayout1"
+        android:layout_marginTop="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Recivedlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="30dp"
+            app:cardBackgroundColor="#CCEAF8"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:cardMaxElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/Recived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hi"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/Timeleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="7dp"
+                    android:text="09:00"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/send_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="#C0FDC3"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:cardMaxElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hi"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/TimeRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:drawableRight="@drawable/baseline_done_icon"
+                    android:text="09:00"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pendingTimeRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

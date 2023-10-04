@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_feedback"
+                android:text="GIVE FEEDBACK"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_feedback" />
+            <!--
+                        <View
+                            android:id="@+id/view"
+                            style="@style/Divider"
+                            android:layout_below="@+id/feed"
+                            android:layout_marginTop="20sp" />-->
+
+            <Spinner
+
+                android:spinnerMode="dialog"
+                android:dropDownWidth="match_parent"
+                android:id="@+id/feedback_spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="40sp"
+                android:entries="@array/feedback_arrays"
+                android:padding="5dp"
+                android:popupBackground="@color/colorWhite" />
+
+            <RelativeLayout
+                android:id="@+id/infoRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedback_spin"
+                android:visibility="gone">
+
+                <TextView
+                    android:paddingLeft="12dp"
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Which Information mentioned  was incorrect?"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/info_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:layout_marginTop="20sp"
+                    android:entries="@array/info_arrays"
+                    android:padding="5dp"
+                    android:popupBackground="@color/colorWhite"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info_spin"
+                    android:layout_marginTop="15dp"
+                    android:text="After we verify if mentioned information found incorrect, One Student Contact View will be reversed to your profile."
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/genRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedback_spin"
+                android:visibility="gone">
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Mention how you got to know, Parents are not genuine?"
+
+                    android:textSize="12sp"
+                    />
+
+                <EditText
+
+                    android:padding="5dp"
+                    android:gravity="left|top"
+                    android:id="@+id/feedback_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/text3"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/border"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

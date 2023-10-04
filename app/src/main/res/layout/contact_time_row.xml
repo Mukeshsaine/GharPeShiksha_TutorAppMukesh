@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:id="@+id/day"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/openTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Open Time"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close Time"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:id="@+id/closeTime"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

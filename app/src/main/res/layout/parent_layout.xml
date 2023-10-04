@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+
+        android:background="#F3F3F3"/>
+
+    <LinearLayout
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:baselineAligned="false"
+        android:layout_gravity="center"
+        >
+         <TextView
+             android:elevation="5dp"
+             android:textColor="@color/colorBlack"
+             android:textSize="14sp"
+             android:gravity="left|center"
+             android:paddingStart="45dp"
+             android:id="@+id/heading_item"
+             android:text="Abc"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingLeft="35dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+<!--<TextView    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#FFFFFF"
+    android:fontFamily="sans-serif"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:textSize="15sp"
+    android:gravity="left|center"
+    android:text="abc"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:height="3dp"
+    android:textColor="#000000"
+    android:paddingLeft="35dp"
+    android:paddingRight="10dp"
+    android:id="@+id/heading_item"
+    android:layout_gravity="center_vertical"
+    android:checked="false"
+
+
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    />
+-->
+
+

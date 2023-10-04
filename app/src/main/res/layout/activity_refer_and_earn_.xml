@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.ReferAndEarn_Activity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/rtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/imagerefer"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/referimage" />
+
+            <TextView
+                android:id="@+id/textview100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagerefer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="You and your friend earn Flat 1500 Points each on your friend's first plan purchase"
+                android:textAlignment="center"
+
+                android:textSize="20dp" />
+            <!-- Rs. symbol code \u20B9-->
+
+            <TextView
+                android:id="@+id/termsAndCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview100"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="How can i redeem points"
+                android:textColor="#0052A5"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/termsAndCondition"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Share your Code"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/h"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/refercode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="USERNAME806Q"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+
+                <ImageView
+                    android:id="@+id/copycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/refercode"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_copy" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lineq"
+                style="@style/Divider"
+                android:layout_below="@+id/fff"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp" />
+
+
+
+
+                <Button
+                    android:id="@+id/referNow_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Invite and earn"
+                    android:textColor="#fff"
+                    android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>

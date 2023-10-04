@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abeezee</item>
+        <item>@font/abel</item>
+        <item>@font/advent_pro_thin</item>
+        <item>@font/alata</item>
+        <item>@font/andika_new_basic</item>
+        <item>@font/asap</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/bubblegum_sans</item>
+        <item>@font/clicker_script</item>
+        <item>@font/dancing_script_bold</item>
+        <item>@font/krona_one</item>
+        <item>@font/tauri</item>
+    </array>
+</resources>

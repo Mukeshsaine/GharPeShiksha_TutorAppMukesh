@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/sortTArchived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_format_line_spacing_black_24dp"
+                android:text="SORT ENQUIRIES BY"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_format_line_spacing_black_24dp" />
+
+            <View
+                android:id="@+id/viewArchived"
+                style="@style/Divider"
+                android:layout_below="@+id/sortTArchived"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/sortRecencyArchived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewArchived"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_recent"
+                android:focusable="true"
+                android:text="Recency"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_recent"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/checkRecArchived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/viewArchived"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_check_blue_24dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/sortDistanceArchived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sortRecencyArchived"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_distance"
+                android:focusable="true"
+                android:text="Distance"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_distance"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:id="@+id/checkDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/sortRecencyArchived"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_check_blue_24dp"
+                android:padding="10dp"
+                android:visibility="visible"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

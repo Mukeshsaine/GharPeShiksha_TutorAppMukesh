@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get better response"
+            android:textSize="28sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill in the following details. It will help students find you and reach you."
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your english speaking skills : "
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:padding="10dp"
+            style="@style/InputText_Bordertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_enter"
+            app:hintTextAppearance="@style/TextLabel"
+            >
+            <Spinner
+                android:id="@+id/spinnerEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:entries="@array/english_skill"
+                android:dropDownSelector="@drawable/arrow_down_new"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textinputLayout"
+            style="@style/InputText_Border"
+            app:boxStrokeColor="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:focusableInTouchMode="true"
+            android:hint=" "
+            app:hintEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/edittextbio"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_height="match_parent"
+                android:hint="Mention your teaching style, qualification(and from where),your strong subjects ,currently what are you doing, years you are in teaching profession, previous students results etc."
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/confirmB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                android:textColor="#fff"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/blue_button_background"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:id="@+id/skipB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SKIP FOR NOW"
+                android:layout_toLeftOf="@+id/confirmB"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

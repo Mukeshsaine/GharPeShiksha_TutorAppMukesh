@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enquiries_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/textAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/Divider"
+                android:layout_below="@+id/textAppName"
+                 />
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/payment_date"
+    android:layout_below="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/icon_date"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:text="Payment Date   : "
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+
+        android:id="@+id/textBillDate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        />
+
+</LinearLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/relLay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment_date"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/post2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/icon_rupee"
+                    android:text="Amount          :  "
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/post2"
+                    android:text=""
+
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+
+                android:id="@+id/relLay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLay2"
+                android:layout_marginTop="5dp">
+
+                <TextView
+
+                    android:id="@+id/post4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_flash_on_blue_14dp"
+                    android:text="Plan Staus   : "
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textPlanAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/post4"
+                    android:text=""
+
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

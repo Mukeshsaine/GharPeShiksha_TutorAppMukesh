@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context=".activities.About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/completedatalayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/applogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/gps_logo_white" />
+
+            <TextView
+                android:id="@+id/textgps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/applogo"
+                android:layout_centerHorizontal="true"
+                android:text="GharPeShiksha"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/aboutapptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textgps"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:text="@string/aboutgps"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:id="@+id/aboutLayoutSecondary"
+                android:layout_below="@+id/aboutapptext">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_toLeftOf="@+id/overviewTV"
+                        android:layout_height="1dp"
+                        android:background="#9C9C9C"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/overviewTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:text="Company Overview"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/overviewTV"
+                        android:layout_height="1dp"
+                        android:background="#9C9C9C"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:text="@string/gpsoverview"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_toLeftOf="@+id/missionTV"
+                        android:layout_height="1dp"
+                        android:background="#9C9C9C"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/missionTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#000"
+                        android:text="Our Mission"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@+id/missionTV"
+                        android:layout_height="1dp"
+                        android:background="#9C9C9C"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/gpsmission"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutLayoutSecondary"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcfcfc"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:onClick="privacyweb"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/privacypolicy_icon"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Privacy Policy"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:onClick="helpnsupportweb"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/helpnsupport_icon"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Help and support"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:onClick="termsnconditionweb"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/termsncondition_icon"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Terms and Conditions"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#fff"
+                        android:onClick="termsnuseweb"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/privacypolicy_icon"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Refund and Cancellation Policy"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

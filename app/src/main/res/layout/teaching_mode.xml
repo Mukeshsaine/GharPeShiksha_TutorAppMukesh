@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Tuition at Student's Home "/>
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Tuition at Your Home"/>
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Class "/>
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Institute or Group Tuition"
+            />
+        <TextView
+            android:id="@+id/confirm"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

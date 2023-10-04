@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:animateLayoutChanges="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#03A9F4"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutfiltersvjhsjad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+
+            <RelativeLayout
+                android:id="@+id/chatFloat"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ripples_background_grey"
+                android:elevation="4dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/chat_icon"
+                    android:drawableLeft="@drawable/chat_icon"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/black"
+                    android:text="Support"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/onclickSort"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ripples_background_grey">
+
+                <RelativeLayout
+                    android:id="@+id/sortIc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/sortingtextview"
+                    android:layout_toLeftOf="@+id/sortingtextview">
+
+                    <ImageView
+                        android:id="@+id/ddd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_sort" />
+
+                    <TextView
+                        android:id="@+id/sortBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="4sp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/class_count"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text="D"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/sortingtextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:text="Sort"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/filterfloat"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ripples_background_grey"
+                android:elevation="4sp"
+                tools:ignore="UnusedAttribute">
+
+
+                <RelativeLayout
+                    android:id="@+id/filteric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/hfdjkbfdjk"
+                    android:layout_toLeftOf="@+id/hfdjkbfdjk">
+
+                    <ImageView
+                        android:id="@+id/hhh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_filter_list_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/filterBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="4sp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/class_count"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/hfdjkbfdjk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripples_background_grey"
+                    android:drawablePadding="5dp"
+                    android:text="Filter"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/mainTabs"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            app:tabIndicatorColor="@color/colorWhite"-->
+<!--            app:tabMode="fixed"-->
+<!--            app:tabSelectedTextColor="#ffffff"-->
+<!--            app:tabTextColor="#dfdfdf" />-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomNavLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior">
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/bottomNav"
+            android:background="#000"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            app:labelVisibilityMode="labeled"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

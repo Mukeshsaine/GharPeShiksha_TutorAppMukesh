@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/howToEarnCard"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Earn by referring to new teachers and get 1500 points when they become a paid member."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/earn_heading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/earn_heading"
+            android:text="Refer you friend to GharPeShiksha, as soon as your friend registers with us you and your friend both will get 1500 points each."
+            android:textColor="#000"
+            android:id="@+id/earn_details"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=""
+            android:id="@+id/dividerDetails"
+            android:layout_below="@+id/earn_details"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/earn_button"
+            android:paddingStart="10dp"
+            android:drawableTint="#fff"
+            android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/right_arrow"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/dividerDetails"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="Refer  Now"
+            android:clickable="true"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="@drawable/blue_button_background"
+            android:drawableRight="@drawable/right_arrow"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/earn_learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:text="Learn More"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/dividerDetails"
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

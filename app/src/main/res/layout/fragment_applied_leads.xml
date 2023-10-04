@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".fragments.AppliedLeadsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="5dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:id="@+id/relLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="You have no Applied Leads."
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15sp"
+                    android:gravity="center"
+                    android:text="UPGRADE YOUR MEMBERSHIP TO APPLY ON LEADS!"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Benefits:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/view"
+                    style="@style/Divider"
+                    android:layout_below="@+id/text3"
+                    android:layout_marginTop="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/linearLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relLay2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/tLay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/stu"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/students"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_toEndOf="@+id/stu"
+                                android:text="Instant Contacts"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_toRightOf="@+id/stu"
+                                android:layout_marginLeft="15dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tLay3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tLay"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/res"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/instant1"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/res"
+                                android:text="High Response"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/res" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tLay4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tLay3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/sms"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/sms"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/sms"
+                                android:text="SMS/Email Alerts"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/sms" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/appLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/tLay5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/cont"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/parents1"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/cont"
+                                android:text="Parents Can Contact"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/cont" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tLay6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tLay5"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/tut"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/suggestion1"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/tut"
+                                android:text="Suggested Tutor Tag"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/tut" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tLay7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tLay6"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/unl"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/clients"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textU"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/unl"
+                                android:text="Unlimited Parent Views"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/unl" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tLay8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tLay7"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/ean"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/notification12"
+                                tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/ean"
+                                android:text="15 min early access"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/ean" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/upgradeAppButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/appLay"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="UPGRADE"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/applied_leads_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="#F0F0F0"
+            android:focusable="true"
+            android:scrollbars="vertical"
+            android:paddingBottom="55dp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/progressGetLeads"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

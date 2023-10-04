@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EnquiryFilter">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarfilter"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/back_arrow"
+        app:title="Filter"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/TextLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/classes_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="Classes"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+
+            <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/location_text_view"
+                android:gravity="center"
+                android:text="Location"
+                android:textSize="16dp"
+                android:textColor="@color/blackcolor"
+                />-->
+
+
+            <TextView
+                android:id="@+id/radius_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="Area"
+                android:textColor="@color/blackcolor"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/search_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="Search"
+                android:textColor="@color/blackcolor"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="65">
+
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Select atleast one Class"
+                 android:gravity="center"
+                 android:id="@+id/selectclassstextview"
+                 android:visibility="gone"
+                 android:layout_centerInParent="true"/>
+ -->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff">
+
+                    <LinearLayout
+                        android:id="@+id/layout_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/Edit_Search1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="Search by Enuiry id"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/checkBoxLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical" />
+
+                    <!--<LinearLayout
+                        android:background="#fff"
+                        android:id="@+id/locationLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/radiusLinearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+
+                            <!--<TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Expand Area"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="normal"
+                                android:layout_marginBottom="20sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="20sp"
+                                android:layout_marginLeft="10dp" />-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/check_box1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/colorPrimaryDark"
+                                    android:checked="true" />
+
+                                <TextView
+                                    android:id="@+id/seekbar_selected_numebr_text_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:text="Radius (5 Kms) "
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatSeekBar
+                                android:id="@+id/radius_seekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:max="25"
+                                android:min="5"
+                                android:paddingBottom="5dp"
+                                android:progress="1"
+                                android:progressDrawable="@drawable/seekbar_drawable_progressbar" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#fff"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/seekbar_initial_numebr_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="12sp"
+                                    android:layout_marginLeft="12sp"
+                                    android:text="5"
+                                    android:textColor="@color/blackcolor"
+                                    android:textSize="16sp" />
+
+
+                                <TextView
+                                    android:id="@+id/seekbar_final_numebr_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="25"
+                                    android:textColor="@color/blackcolor"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+
+                            <!--<TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Radius : 0km"
+                                android:textColor="@color/blackcolor"
+                                android:id="@+id/seekbar_selected_numebr_text_view"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                />
+    -->
+                            <TextView
+                                android:id="@+id/examplelocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="25dp"
+                                android:text="5 Kms from patel nagar"
+                                android:textSize="16sp" />
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginBottom="20sp"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginBottom="20sp"
+                                android:text="From Location"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <EditText
+                                    android:id="@+id/locationEdiText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="95"
+                                    android:editable="false"
+                                    android:hint="Enter Location"
+                                    android:textSize="18sp" />
+
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_weight="30"
+                                    android:text="Submit"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/getCurrentLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/location"
+
+                                android:drawableLeft="@drawable/location"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:elevation="10dp"
+                                android:text="Use my current location"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <TextView
+                                android:id="@+id/changeLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:drawableEnd="@drawable/icon_edit"
+                                android:drawableRight="@drawable/icon_edit"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="#757575"
+                                android:text="Location "
+                                android:textColor="#000"
+                                android:textSize="24sp"
+                                android:visibility="gone" />
+
+                            <!-- <TextView
+                                 android:layout_marginLeft="8dp"
+                                 android:textSize="18sp"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="Patel Nagar, New Delhi"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginStart="8dp" />-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/check_box2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/colorPrimaryDark"
+                                    android:checked="false" />
+
+                                <TextView
+                                    android:id="@+id/All_Indian"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="All India"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/locText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_button"
+        android:text="Apply"
+        android:textColor="#fff" />
+</LinearLayout>

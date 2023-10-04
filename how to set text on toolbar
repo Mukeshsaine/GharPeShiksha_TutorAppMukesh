@@ -1,0 +1,22 @@
+Firstclass
+
+ Intent intent = new Intent(getApplicationContext,SecondActivity.class);
+        intent.putExtra("KEY",value);
+        intent.putExtra("KEY",VALUE);
+        startActivity(intent)
+Second Activity
+
+ Intent intent =getIntent();
+ confirm_txt =(TextView)findViewById(R.id.txt);
+ String txt_put =intent.getStringExtra("KEY");
+ toolbar.settitle(txt_put);
+ 
+ 
+ change toolbar title by click
+ 
+ 
+   if (TextUtils.equals(RM_tutor,"matchedTutor")){
+            toolbar.setTitle("Matching Tutors");
+        } else {
+            toolbar.setTitle("Responded Tutors");
+        }

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">GharPeShiksha</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_area_range_selection">Map</string>
+
+    <string name="login_preferences">com.shahjad.gharpeshikshacom_login_preferences</string>
+    <string name="login_status_preferences">com.shahjad.gharpeshikshacom_login_status_preferences</string>
+
+    <string name="login_status_preferences_phone">com.shahjad.gharpeshikshacom_phone_prferences</string>
+    <string name="firebase_token">com.shahjad.gharpeshikshacom_firebase_token</string>
+
+    <string name="Email">com.shahjad.gharpeshikshacom_Email</string>
+    <string name="Source">com.shahjad.gharpeshikshacom_Source</string>
+    <string name="Version">com.shahjad.gharpeshikshacom_Version</string>
+    <string name="FirstTime">com.shahjad.gharpeshikshacom_FirstTime</string>
+    <string name="showAboutDialog">com.shahjad.gharpeshikshacom_showAboutDialog</string>
+
+
+    <string name="aboutgps">GharPeShiksha is among the top rated educational platform helping students and teachers seeking for tutoring services. We are currently serving in Delhi with NCR (Ghaziabad, Noida, Gurugram, Faridabad) and Mumbai. </string>
+
+    <string name="pref_file">com.thealteria.pref_list</string>
+    <string name="pref_login_status">com.thealteria.pref_login_status</string>
+    <string name="pref_sort">com.thealteria.pref_sort</string>
+
+
+    <string name="nav_open_drawer">Open Navigation Drawer</string>
+    <string name="nav_close_drawer">Close Navigation Drawer</string>
+    <string name="teaching_mode">Teaching Mode</string>
+    <string name="vehicle_owned">Vehicle Owned ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="qualification_info">Qualification Info</string>
+    <string name="gpsoverview">With the help of a pool of  more than 10 thousand experienced teachers we have served over 40 thousand students who were looking tutors nearby.
+Currently we are serving thousands of students requirements looking for tutors. That makes us the best platform for tutoring services.</string>
+
+    <string name="gpsmission">To provide quality education in Home Tutoring and give our valuable teacher an opportunity to earn good amount of income from it.</string>
+
+    <string name="chatBotNA">ChatBot Not Available Please Try again later.\n Contact Us at  7065806565</string>
+
+    <string name="paid_membership">Paid Membership</string>
+    <string name="trial_membership">Trial Membership</string>
+    <string name="_40_contact_views">40 contact views</string>
+    <string name="_2_contact_views">2 contact views</string>
+    <string name="validity_6_months">Validity : 6 months</string>
+    <string name="validity_1_week">Validity : 1 week</string>
+    <string name="immediate_contact_view">Immediate contact view</string>
+    <string name="contact_view_after_2_hours">Contact view after 2 hours</string>
+    <string name="parents_can_contact">Parents can contact</string>
+    <string name="early_notification">Early notification</string>
+    <string name="instant_contact_views">Instant Contact Views</string>
+    <string name="profile_advertisement">Profile advertisement</string>
+    <string name="suggested_tutor_tag">Suggested tutor tag</string>
+    <string name="unlimited_leads">Unlimited Leads</string>
+    <string name="proceed_with_paid_membership">Proceed with Paid Membership</string>
+    <string name="proceed_with_free_trial">PROCEED WITH FREE TRIAL</string>
+    <string name="gharpeshiksha_review">GharPeShiksha Reviews</string>
+
+    <string-array name="feedback_arrays">
+        <item>Select an option</item>
+        <item>Communication held with parents (Demo time given)</item>
+        <item>Communication held with parents (Demo time not given)</item>
+        <item>Demo class given (Successful)</item>
+        <item>Demo class given (Under consideration)</item>
+        <item>Parents do not want teacher now (Requirement Fulfilled)</item>
+        <item>Parents non picking phone (tried atleast 3 times at interval of 3–4 hours during a day)</item>
+        <item>Information mentioned in lead is incorrect</item>
+        <item>Parents are not genuine (They do not want any teacher)</item>
+    </string-array>
+
+    <string-array name="info_arrays">
+        <item>Select an option</item>
+        <item>Class &amp; Subject</item>
+        <item>Contact number</item>
+        <item>Area</item>
+        <item>Gender</item>
+    </string-array>
+    <string-array name="spinner_feedback">
+        <item>Select an option</item>
+        <item>Tell us your experience</item>
+        <item>Suggestion</item>
+        <item>Complaint</item>
+    </string-array>
+
+    <string-array name="english_skill">
+        <item>Select an option</item>
+        <item>Below Average</item>
+        <item>Average</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

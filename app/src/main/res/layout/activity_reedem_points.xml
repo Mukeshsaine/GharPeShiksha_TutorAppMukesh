@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:elevation="5dp"
+        android:id="@+id/redeemtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="YOUR BALANCE"
+            android:fontFamily="Arial"
+            android:id="@+id/yourbalance"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/yourbalance"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/totalPoints"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="8dp"
+            android:textColor="#fff"
+            android:id="@+id/howtoEarn"
+            android:gravity="center"
+            android:drawableStart="@drawable/question_mark"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="How to earn points"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/buttonrewardwallet"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Reward Wallet"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textSize="15dp"
+            android:id="@+id/redeempoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="Redeem"
+            android:textColor="#BEBEBE"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/textRewardWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+
+            android:id="@+id/textRedeem"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="invisible"
+            android:layout_weight="50"
+            android:background="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rewardhistoryrelativelayout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/redeempointrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/noHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:visibility="visible"
+            android:layout_marginEnd="20dp"
+            android:text="No Transaction History"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/redeemRelativeLayout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:background="#fff"
+        android:layout_height="match_parent">
+<!--
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+-->
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+
+                android:id="@+id/contactviewradiobutton"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Get Contact View"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+
+                android:id="@+id/paytmradiobutton"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Paytm Cash"/>
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relativelayoutaasd"
+            android:layout_below="@+id/radiogroup"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/pointsredeem"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:id="@+id/pointsedittext"
+                android:maxLength="5"
+                android:layout_height="wrap_content"
+                android:hint="Points"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/paytmnumber"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/pointsredeem"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:id="@+id/paytmnumbereditext"
+                android:maxLength="10"
+                android:layout_height="wrap_content"
+                android:hint="Paytm Number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:id="@+id/ahkjah"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/relativelayoutaasd"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:onClick="redeem"
+                android:textColor="#fff"
+                android:text="Reedem"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/ahkjah"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/termcondition"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Terms and conditions"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

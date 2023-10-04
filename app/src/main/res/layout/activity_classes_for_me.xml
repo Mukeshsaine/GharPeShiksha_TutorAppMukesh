@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ClassesForMeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarCla"
+                layout="@layout/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar"
+            android:fillViewport="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:text="Enquiry Id:"
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textClaId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/text"
+                            android:paddingBottom="5dp"
+                            android:text=""
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/shareB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/share"
+                            android:padding="13dp" />
+
+                        <ImageView
+                            android:id="@+id/favButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_toLeftOf="@+id/shareB"
+                            android:background="@drawable/favourite_false" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textClaName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relLay3"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:text="  Name Surname"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+
+                    <!--LAYOUT FOR SUBJECTS NEEDED-->
+                    <LinearLayout
+                        android:id="@+id/relLay9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/textClaTutorReq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/text9"
+                            android:text="  Tutor Requirement for "
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLay5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textClaName"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_local_phone_blue24dp"
+                            android:drawablePadding="5dp"
+                            android:text=" Contact:"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/text2"
+                            android:text="98XXXXXX27"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textMinsD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay5"
+                        android:drawableStart="@drawable/time_24dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="#000"
+                        android:text=" "
+                        android:textColor="#000"
+                        android:textSize="17dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/relLay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay9"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/money"
+                            android:drawablePadding="5dp"
+                            android:text="Budget: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaBudget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/post"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textMinsD"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/post3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/gender"
+                            android:drawablePadding="5dp"
+                            android:text="Gender Preference:"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaPref"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@+id/post3"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        style="@style/Divider"
+                        android:layout_below="@+id/relLay6"
+                        android:layout_marginTop="10dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/relLay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_message_blue_24dp"
+                            android:drawablePadding="5dp"
+                            android:text="Parents Message: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaMes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text3"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Parents message"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/relLay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relLay7"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/textClaLoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="95"
+                            android:drawableStart="@drawable/ic_location_on_black_24dp"
+                            android:text="Janakpuri, Delhi"
+                            android:textColor="#0F83FB"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textClaDis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="5"
+                            android:text="2.5 Km"
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/GmapsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay4"
+                        android:layout_marginTop="5dp">
+
+                        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        style="@style/Divider"
+                        android:layout_below="@+id/GmapsLayout"
+                        android:layout_marginTop="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/LayoutContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view2"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/textClaViews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view2"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="95"
+                            android:drawableStart="@drawable/ic_eye_blue_14dp"
+                            android:drawablePadding="5sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="3 Tutors contacted"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/closeddddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5"
+                            android:padding="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="Closed"
+                            android:textAllCaps="false"
+                            android:textColor="#FF5252"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/textcalhhhhl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/boaderblue"
+                            android:drawableStart="@drawable/ic_call_black_24dp"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:drawablePadding="3dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="    Call    "
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/textviewcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/greenborder"
+                            android:drawableStart="@drawable/ic_call_black_24dp"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:drawablePadding="3dp"
+                            android:padding="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="View Contact"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        style="@style/Divider"
+                        android:layout_below="@+id/LayoutContact"
+                        android:layout_marginTop="10dp" />
+
+                    <!--             <TextView
+                                     android:id="@+id/textClaCon"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_below="@+id/view3"
+                                     android:layout_marginTop="20dp"
+                                     android:background="@drawable/green_border"
+                                     android:drawablePadding="5dp"
+                                     android:drawableStart="@drawable/ic_call_white_24dp"
+                                     android:gravity="center"
+                                     android:padding="10dp"
+                                     android:text="View Contact"
+                                     android:textColor="@color/colorWhite"
+                                     android:textSize="15sp"
+                                     android:textStyle="bold"
+                                     android:visibility="gone" />-->
+
+                    <RelativeLayout
+                        android:id="@+id/relLay8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view3"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_star_blue_24dp"
+                            android:drawablePadding="5dp"
+                            android:text="Upgrade your membership plan to contact the student."
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text4"
+                            android:layout_marginTop="10dp"
+                            android:drawablePadding="5dp"
+                            android:text=" "
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="15sp" />
+
+                        <!-- <TextView
+                             android:id="@+id/text6"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@+id/text5"
+                             android:layout_marginTop="5dp"
+                             android:drawablePadding="5dp"
+                             android:drawableStart="@drawable/ic_record_grey_14dp"
+                             android:text="Get higher response from students."
+                             android:textColor="@color/quantum_grey"
+                             android:textSize="15sp" />
+
+                         <TextView
+                             android:id="@+id/text7"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@+id/text6"
+                             android:layout_marginTop="5dp"
+                             android:drawablePadding="5dp"
+                             android:drawableStart="@drawable/ic_record_grey_14dp"
+                             android:text="SMS and email alerts for new student classesForMe."
+                             android:textColor="@color/quantum_grey"
+                             android:textSize="15sp" />
+ -->
+                        <TextView
+                            android:id="@+id/textClaUpgrade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text5"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/blue_border"
+                            android:gravity="center"
+                            android:paddingStart="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="Upgrade"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

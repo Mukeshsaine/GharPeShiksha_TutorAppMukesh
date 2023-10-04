@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activities.OnScreenSliderActivity"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_above="@+id/dotsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+   <!-- <android.support.v7.widget.CardView
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/sign_in"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        android:textSize="18dp"
+
+        app:cardBackgroundColor="#43C0F6"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="New Tutor"
+            android:textColor="#fff"
+
+            android:textSize="18dp" />
+    </android.support.v7.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="33dp"
+        app:cardBackgroundColor="#43C0F6"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Get Started"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_above="@+id/sign_in"
+        android:id="@+id/dotsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

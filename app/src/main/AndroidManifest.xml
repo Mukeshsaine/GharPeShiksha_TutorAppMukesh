@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gharpeshiksha.tutorapp">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="false"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- <uses-permission android:name="android.permission.CAMERA"/> -->
+    <!--
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE"
+        android:minSdkVersion="8" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:minSdkVersion="8" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-feature
+        android:name="android.hardware.CAMERA"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="image/jpeg" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/gps_new_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/gps_new_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.Chat_ViewProfile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Archived_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TimeSetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Chats_all_StudentsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.FavouriteStarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Edit_ProfileTeacherActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TeacherDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Test_Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VideoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ParentsContactedDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.ParentsContacted"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.UserInfoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".activities.DemoConfirm" />
+        <activity
+            android:name=".activities.SignUpAndIn"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activities.Chatbot" />
+        <activity android:name=".activities.UsefulContent" />
+        <activity android:name=".activities.UserFeedback" />
+        <activity android:name=".activities.OnNotificationWebView" />
+        <activity
+            android:name=".activities.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.EnquiryFilter" />
+        <activity android:name=".UploadDocuments" />
+        <activity android:name=".activities.ReedemPoints" />
+        <activity
+            android:name=".activities.ReferAndEarn_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Testimonials"
+            android:screenOrientation="portrait" />
+        <activity
+
+            android:name=".activities.HelpAndSupport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tabview_enquiries_count"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tabview_classess_count"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangrNumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AllFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BillingHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpgradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dashboard"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- android:value="@string/google_maps_key" /> -->
+        <activity
+            android:name=".activities.AreaRangeSelection"
+            android:label="@string/title_activity_area_range_selection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.QualificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ClassesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.VideoPlayerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.OnScreenSliderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="tutorapp.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ClassesForMeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="gharpeshiksha.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <service
+            android:name=".activities.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            android:minSdkVersion="8">
+            <intent-filter
+                android:minSdkVersion="8"
+                android:priority="999">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.ClientServerService"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

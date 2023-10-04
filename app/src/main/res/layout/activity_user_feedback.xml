@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/Lineardbdsjhgds"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.UserFeedback">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/feedbacktoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:id="@+id/typelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/texttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Feedback type : "
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/grey_boader">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:entries="@array/spinner_feedback" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/messagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typelayout"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Message : "
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/messageedittext"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/feedback_border"
+            android:gravity="start"
+            android:hint="Message"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submit"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_button"
+        />
+
+<!--
+    <android.support.v7.widget.CardView
+        android:id="@+id/submdddit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messagelayout"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="8dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+-->
+
+</LinearLayout>

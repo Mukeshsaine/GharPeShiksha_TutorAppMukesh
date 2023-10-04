@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OTPActivity"
+    android:background="@drawable/courses_background">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|fill_horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/otpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP code"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/contact"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="We have sent you a 6 digit otp code on "
+        android:textSize="14sp"
+        />
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/pinview"
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="+91 7049078936"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinview"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:cursorVisible="false"
+        android:hint="------"
+        android:inputType="number"
+        android:itemBackground="#99CECECE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorRed"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/pinview"
+        android:id="@+id/resend_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/resend"
+        android:layout_below="@+id/pinview"
+        android:layout_marginTop="35dp"
+        android:layout_width="200dp"
+        app:cardCornerRadius="8dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="#43C0F6"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend Code"
+            android:textColor="#fff"/>
+    </androidx.cardview.widget.CardView>
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/change_number"
+        android:textSize="20dp"
+        android:text="Change number "
+        android:textColor="@color/quantum_grey"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/resend"
+        android:layout_marginTop="25dp"
+        />-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/change_number"
+        android:layout_below="@+id/resend"
+        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="#43C0F6"
+
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Number"
+            android:textColor="#fff"/>
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/newuserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_new"
+            style="@style/InputText_Border"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:focusableInTouchMode="true"
+            android:theme="@style/InputText_Border"
+            android:visibility="visible"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/email_new_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_new"
+            style="@style/InputText_Border"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:focusableInTouchMode="true"
+            android:theme="@style/InputText_Border"
+            android:visibility="visible"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/TextLabel"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password_new_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_new_cnf"
+            style="@style/InputText_Border"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:focusableInTouchMode="true"
+            android:theme="@style/InputText_Border"
+            android:visibility="visible"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/TextLabel"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password_new_cnf_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:hint=" Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/referral_new"
+            style="@style/InputText_Border"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:focusableInTouchMode="true"
+            android:theme="@style/InputText_Border"
+            android:visibility="visible"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/referral_new_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:hint="Referral (Optional)"
+                android:inputType="text"
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <!--<Button
+        android:layout_width="30dp"
+        android:visibility="invisible"
+        android:layout_height="30dp"
+        android:id="@+id/loginbutton"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/next_arrow"
+        android:layout_marginEnd="8dp"
+        android:layout_alignRight="@id/textinputLayout"
+        android:layout_below="@id/subtitle"/>-->
+
+
+    <TextView
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newuserLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Let's Begin"
+        android:textColor="#fff"
+        android:textSize="23sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

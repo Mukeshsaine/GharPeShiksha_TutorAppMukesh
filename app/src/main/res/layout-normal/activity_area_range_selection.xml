@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AreaRangeSelection">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutradius">
+
+        <fragment
+
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="15dp">
+
+            <fragment
+                android:id="@+id/edit_location"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:hint="change your location"
+                android:inputType="textPostalAddress"
+                android:paddingRight="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_my_location"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorWhite"
+            android:src="@drawable/icon_my_location"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/layoutradius"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F8F4F4"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Select the distance you can move around location"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:spinnerMode="dialog" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/radius"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@color/colorWhite" />
+
+        <!--
+               <Button
+               android:visibility="visible"
+               android:layout_alignParentBottom="true"
+               android:layout_centerHorizontal="true"
+               android:text="Location"
+               android:id="@+id/getlocation"
+               android:layout_width="50dp"
+               android:layout_height="30dp" />
+               -->
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

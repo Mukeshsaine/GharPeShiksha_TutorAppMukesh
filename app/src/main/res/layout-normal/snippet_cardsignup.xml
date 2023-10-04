@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="5dp"
+            >
+
+            <LinearLayout
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="New Tutor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    app:hintEnabled="false"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLength="10"
+                        android:id="@+id/contact_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:hint="Contact no"
+                        android:inputType="number"
+
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+
+                    android:id="@+id/contact_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Please Fill"
+                    android:textColor="@color/colorRed"
+                    android:textSize="8sp"
+                    android:visibility="invisible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+
+                    android:id="@+id/email_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Please Fill"
+                    android:textColor="@color/colorRed"
+                    android:textSize="8sp"
+                    android:visibility="invisible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+
+                    android:id="@+id/password_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Please Fill"
+                    android:textColor="@color/colorRed"
+                    android:textSize="8sp"
+                    android:visibility="invisible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="12sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/confirm_password_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Password not matched"
+                    android:textColor="@color/colorRed"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/refershow"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    app:hintEnabled="false"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:hint="Referral Code (Optional)"
+                        android:id="@+id/refercodes"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirm_password"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="2dp"
+                    app:cardBackgroundColor="#43C0F6"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp"
+
+
+                    >
+
+                    <TextView
+                        android:padding="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Sign Up"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </androidx.cardview.widget.CardView>
+
+
+
+                <LinearLayout
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/sign_in"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already an existing Tutor ? "/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3B5999"
+                        android:text="Sign In"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+</merge>

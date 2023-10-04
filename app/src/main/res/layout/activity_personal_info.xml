@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.PersonalInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"/>
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+
+                android:textSize="25dp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+
+                >
+
+                <ImageView
+                    android:padding="14dp"
+                    android:src="@drawable/icon_full_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    />
+                <View
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Full Name"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+
+                >
+                <ImageView
+                    android:padding="14dp"
+                    android:layout_weight=".2"
+                    android:src="@drawable/icon_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gender"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Male     "   />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Female"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageView
+                    android:padding="14dp"
+                    android:src="@drawable/icon_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    />
+                <View
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Alternate contact no."/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageView
+                    android:padding="14dp"
+                    android:src="@drawable/icon_dob"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    />
+                <View
+                    android:layout_weight=".05"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_weight=".8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+
+                            android:editable="false"
+                            android:inputType="none"
+                            android:gravity="center|left"
+                            android:id="@+id/date"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3"
+                            android:hint="Date Of Birth (mm / dd / yyyy)"
+                            />
+                        <View
+                            android:background="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".006"/>
+                        <View
+
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".1"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageView
+                    android:padding="14dp"
+                    android:src="@drawable/icon_home_add"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    />
+                <View
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <fragment
+                    android:id="@+id/user_current_add"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+        <Button
+            android:id="@+id/next"
+            android:textColor="@color/colorWhite"
+            android:text="Next"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

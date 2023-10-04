@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardBackgroundColor="#ffff"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            android:layout_weight="1"
+            app:cardMaxElevation="4dp"
+            app:cardCornerRadius="5dp"
+            app:cardPreventCornerOverlap="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/day"
+                    android:text="Wednesday"
+                    android:textSize="20dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:id="@+id/openTime"
+                    android:layout_marginRight="1dp"
+                    android:text="10:00 AM"
+                    android:textSize="20dp"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:text="10:00 PM"
+                    android:id="@+id/closeTime"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:id="@+id/DeleteItem"
+            android:src="@drawable/menu_time_schedule
+"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+</LinearLayout>

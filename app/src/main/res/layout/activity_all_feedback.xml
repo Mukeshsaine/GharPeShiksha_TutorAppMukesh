@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AllFeedbackActivity">
+
+<include layout="@layout/snippet_toolbar"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:scrollbars="vertical"
+        />
+
+    <TextView
+        android:id="@+id/no_feedback_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:text="There is no feedback yet."/>
+
+</RelativeLayout>

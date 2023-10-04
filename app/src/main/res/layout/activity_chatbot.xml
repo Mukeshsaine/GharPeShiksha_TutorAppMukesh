@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activities.Chatbot">
+
+    <ProgressBar
+        android:id="@+id/loadPreviousChat"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/notAvailableChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:autoLink="phone"
+        android:elevation="5dp"
+        android:text="@string/chatBotNA"
+        android:textAlignment="center"
+        android:textColorLink="#039BE5"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:overScrollMode="always"
+        android:scrollbars="vertical"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="insideInset"
+        android:id="@+id/scrollview_chat"
+        android:layout_below="@+id/loadPreviousChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/scrollforsugeestion"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/chatLayoutRel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="120dp">
+
+            <LinearLayout
+                android:id="@+id/chatLayout"
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:background="#fff"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bot_response_background"
+                android:layout_marginRight="150dp"
+                android:textSize="15sp"
+                android:visibility="invisible"
+                android:layout_below="@+id/chatLayout"
+                android:id="@+id/typing"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:text="Saathi is typing ..."
+                android:layout_marginEnd="150dp"
+                android:layout_marginStart="10dp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollforsugeestion"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="insideInset"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/suggestionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--<android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:id="@+id/suggestionsRecyclerView"
+                android:layout_height="wrap_content"/>-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:id="@+id/loadChats"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:text="Load Previous Chat"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:drawableStart="@drawable/arrow_up"
+        android:drawablePadding="10dp"
+        android:background="@drawable/feedback_border"
+        android:drawableLeft="@drawable/arrow_up_new"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/bottomChats"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="#000"
+        android:drawableStart="@drawable/arrow_down_new"
+        android:drawablePadding="0dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_border"
+        android:drawableLeft="@drawable/arrow_down_new"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

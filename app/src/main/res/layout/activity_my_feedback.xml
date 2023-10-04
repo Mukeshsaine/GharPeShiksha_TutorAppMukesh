@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/toolbarCla"
+                android:background="@color/colorPrimary"
+                layout="@layout/app_bar_layout" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar"
+            android:fillViewport="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:text="Enquiry Id:"
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textClaId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/text"
+                            android:paddingBottom="5dp"
+                            android:text="18386 "
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textClaName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relLay9"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:text="Name Surname"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/relLay9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/textClaTutorReq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textAlignment="center"
+                            android:text="Tutor Requirement for biology in XII"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLay5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textClaName"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_local_phone_blue24dp"
+                            android:text="Contact:"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/text2"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lay11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay5"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/post1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/time_24dp"
+                            android:text="Posted on: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textAppPosted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/post1"
+                            android:drawablePadding="5dp"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lay12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay11"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/post2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_eye_blue_24dp"
+                            android:text="Viewed on: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textAppViewed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/post2"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lay12"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/money"
+                            android:text="Budget: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaBudget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/post"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relLay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relLay3"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/post3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/gender"
+                            android:text="Gender Preference:"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textgenderPref"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/post3"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        style="@style/Divider"
+                        android:layout_below="@+id/relLay6"
+                        android:layout_marginTop="10dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/relLay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_message_blue_24dp"
+                            android:text="Parents Message: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textClaMes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text3"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_below="@+id/relLay7"
+                        android:id="@+id/feedRel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/text7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_message_blue_24dp"
+                            android:text="My feedback: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+
+                        <TextView
+                            android:id="@+id/my_feedback"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/text7"
+
+                            android:text=" "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/gpsRel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/feedRel"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/text10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableStart="@drawable/ic_message_blue_24dp"
+                            android:text="GharPeShiksha message: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/our_feedback"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/text10"
+
+                            android:text=" "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:weightSum="100"
+                        android:id="@+id/relLay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gpsRel"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_weight="95"
+                            android:id="@+id/textClaLoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_location_on_black_24dp"
+                            android:text="Janakpuri, Delhi"
+                            android:textColor="#0F83FB"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_weight="5"
+                            android:id="@+id/textClaDis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="2.5 Km"
+                            android:textColor="@color/quantum_grey"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        style="@style/Divider"
+                        android:layout_below="@+id/relLay4"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/giveFeedback"
+                        android:elevation="2dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="5dp"
+                        android:padding="15dp"
+                        android:background="@drawable/background_button"
+                        android:layout_below="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Give Feedback"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
